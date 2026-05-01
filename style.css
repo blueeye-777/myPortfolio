@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --light: #ecf0f1;
+    --dark: #2d3436;
+}
+
+body{
+    line-height:1.6;
+    color:var(--dark);
+    background-color:var(--light);
+}
+
+header{
+    background: var(--primary);
+    padding:1rem;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.logo{
+    color:white;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:2rem;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:1.1rem;
+}
+
+.nav-links a:hover{
+    color:var(--secondary)
+}
+
+.container{
+    max-width:1200px;
+    margin:2rem auto;
+    padding: 0 1rem;
+}
+
+.hero{
+    text-align:center;
+    padding:4rem 2rem;
+    background:var(--secondary);
+    color:white;
+    border-radius:8px;
+    margin-bottom:2rem;
+}
+
+.hero h1{
+    font-size:2.5rem;
+    margin-bottom:1rem;
+}
+
+.card{
+    background:white;
+    padding:2rem;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0,1);
+    margin-bottom:2rem;
+}
+
+.project-card{
+    background:white;
+    padding:1.5rem;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0,1);
+    text-align: center;
+}
+
+.contact-form{
+    max-width:600px;
+    margin:0 auto;
+}
+
+.form-group{
+    margin-bottom:1rem;
+}
+
+input,textarea{
+    width:100%;
+    padding:0.8rem;
+    border-radius:4px;
+}
+
+button{
+    background:var(--secondary);
+    color:whiter;
+    border:none;
+    padding:0.8rem 2rem;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:2rem 1rem;
+    margin-top:3rem;
+}
+
+.avatar{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 1.5rem;
+    border:3px solid var(--secondary);
+}
+
+.about-card{
+    text-align:center;
+}
+
+@media (max-width:768px){
+    nav{
+        flex-direction:colum;
+        gap:1rem;
+    }
+    .nav-links{
+        gap:1rem;
+    }
+    .hero h1{
+        font-size:2rem;
+    }
+}
